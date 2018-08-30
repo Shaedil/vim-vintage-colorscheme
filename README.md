@@ -1,10 +1,12 @@
 <table><tbody align="center">
 
+<tr><td colspan='2'>
 <img src="https://github.com/Shaedil/vim-vintage-colorscheme/raw/master/images/Banner.png" alt="Apollo and the Continents Asia  by Tiepolo, Giovanni Battista" />
 <h4> <i>Feel the oils of the 1700's</i> </h4>
-
 </td></tr>
+
 <tr></tr>
+
 <tr>
 <td>
 <br>
@@ -18,7 +20,13 @@
 </td>
 </tr>
 
+<tr></tr>
+
+<tr><td colspan='2'>
+
 <p>The Vim-Vintage colorscheme, also known as the Vi-Vintage colorscheme as I like to call it, was inspired by the [solarized](https://github.com/altercation/vim-colors-solarized/) colorscheme's subtleness. As well as the look and feel of oil pantings.</p>
+
+</td></tr>
 
 </tbody></table>
 
