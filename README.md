@@ -40,21 +40,23 @@ Installation is very simple, and I prefer to keep it simple. You can either use 
 
 ### Pathogen Installation 
 1. Download and install Pathogen.
-2. Move the vim-vintage-colorscheme directory into the .vim/bundles directory.
-    
+2. Clone my github repository using Git, or by clicking the green download zip button on the top right
+
     a. **Cloning** 
     ```
     $ cd /.vim/bundle
     $ git clone git://github.com/Shaedil/vim-vintage-colorscheme.git
     ```
     
+3. Then, move the vim-vintage-colorscheme directory into the .vim/bundles directory.  
+
     b. **Moving**
     In the parent directory of vim-vintage-colorscheme:
     ```
         mv vim-vintage-colorscheme /.vim/bundle/
     ```
     
-3. (Optional) You can move the vim-vintage color file to your .vim/colors directory for those with less space
+4. (Optional) You can move the vim-vintage color file to your .vim/colors directory for those with less space
 
 ## Configuration (Modify your .vimrc)
 The commands are easy, because it's similar to other colorschemes:
