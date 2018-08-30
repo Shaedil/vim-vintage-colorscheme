@@ -40,7 +40,7 @@ Installation is very simple, and I prefer to keep it simple. You can either use 
 
 ### Pathogen Installation 
 1. Download and install Pathogen.
-2. Clone my github repository using Git, or by clicking the green download zip button on the top right
+2. Clone my github repository using Git.
 
     a. **Cloning** 
     ```
@@ -57,6 +57,11 @@ Installation is very simple, and I prefer to keep it simple. You can either use 
     ```
     
 4. (Optional) You can move the vim-vintage color file to your .vim/colors directory for those with less space
+
+### Manual Installation
+1. Download the zip file at the top right of the github repository
+2. Extract into the .vim/bundles folder.
+3. Move vintage.vim into the .vim/colors folder
 
 ## Configuration (Modify your .vimrc)
 The commands are easy, because it's similar to other colorschemes:
