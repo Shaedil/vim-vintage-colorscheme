@@ -1,9 +1,6 @@
 <table><tbody align="center">
 
-<tr><td colspan='2'><h1>Vim-Vintage</h1>
-
-<img src="https://github.com/Shaedil/vim-vintage-colorscheme/raw/master/images/Banner.jpg" />
-
+<img src="https://github.com/Shaedil/vim-vintage-colorscheme/raw/master/images/Banner.png" alt="Apollo and the Continents Asia  by Tiepolo, Giovanni Battista" />
 <h4> <i>Feel the oils of the 1700's</i> </h4>
 
 </td></tr>
@@ -21,21 +18,13 @@
 </td>
 </tr>
 
-<tr></tr>
-
-<tr><td colspan='2'>
-
 <p>The Vim-Vintage colorscheme, also known as the Vi-Vintage colorscheme as I like to call it, was inspired by the [solarized](https://github.com/altercation/vim-colors-solarized/) colorscheme's subtleness. As well as the look and feel of oil pantings.</p>
-
-
-<h5></h5>
-</td></tr>
 
 </tbody></table>
 
 ## Story
-    While I was listening to my Pandora and doing some vim, I came across a piece of beautiful playlist art. I looked from the art and to my vim screen and at once, I imagined the colors swirling like a toilet flush. I imagined my code onto that piece of art and the colors colliding into the text washing the entire screen with light colors. I scratched my nose, and I looked at more paintings that were similar, I found one in particular with more contrasting colors. At once, I imagined the painting filled black like the night, and the colors dancing and shooting across the screen like fireworks revealing text that were hidden. A day after (this was at night, mind you), I started to look into color compliments and accents and did more research... What you see before you is the result of that research.
-
+<p>    While I was listening to my Pandora and doing some vim, I came across a piece of beautiful playlist art. I looked from the art and to my vim screen and at once, I imagined the colors swirling like a toilet flush. I imagined my code onto that piece of art and the colors colliding into the text washing the entire screen with light colors. I scratched my nose, and I looked at more paintings that were similar, I found one in particular with more contrasting colors. At once, I imagined the painting filled black like the night, and the colors dancing and shooting across the screen like fireworks revealing text that were hidden. A day after (this was at night, mind you), I started to look into color compliments and accents and did more research... What you see before you is the result of that research.
+<p>
 ## Installation
 Installation is very simple, and I prefer to keep it simple. You can either use Tim Pope's [Pathogen](https://github.com/tpope/vim-pathogen) (recommended) or manually install it.
 
