@@ -75,10 +75,10 @@ Or, if you prefer using the light version try this:
     colorscheme vim-vintage
     ```
 If you have vim-airline or lightline, add that too.
+    
     ```
-     
     ```
 **Important Note for Terminal Users** If your terminal is **not** compatible with my colorscheme please look to my temporary documentation for 16 color palette values. Thank you.
-
+<!-- Add in documentation on README for terminal users and after making the vim files, make the vim-airline and/or lightline themes as well -->
 ## License
     Please see my LICENSE.md file for more details on that.
