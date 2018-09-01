@@ -2,7 +2,7 @@
 
 <tr><td colspan='2'>
 <img src="https://github.com/Shaedil/vim-vintage-colorscheme/raw/master/images/Banner.png" alt="Apollo and the Continents Asia  by Tiepolo, Giovanni Battista" />
-<h4> <i>Feel the oils of the 1700's</i> </h4>
+<h4> <i>Feel the oils from the 1700's</i> </h4>
 </td></tr>
 
 <tr></tr>
@@ -75,10 +75,12 @@ Or, if you prefer using the light version try this:
     colorscheme vim-vintage
     ```
 If you have vim-airline or lightline, add that too.
-    
     ```
+    Currently not avaliable. Wait for the next couple of adjustments. Thank you for your patience.
     ```
+  
 **Important Note for Terminal Users** If your terminal is **not** compatible with my colorscheme please look to my temporary documentation for 16 color palette values. Thank you.
 <!-- Add in documentation on README for terminal users and after making the vim files, make the vim-airline and/or lightline themes as well -->
+
 ## License
-    Please see my LICENSE.md file for more details on that.
+<p>Please see my LICENSE.md file for more details on that.</p>
