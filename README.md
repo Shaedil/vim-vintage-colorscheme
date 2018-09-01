@@ -2,7 +2,7 @@
 
 <tr><td colspan='2'>
 <img src="https://github.com/Shaedil/vim-vintage-colorscheme/raw/master/images/Banner.png" alt="Apollo and the Continents Asia  by Tiepolo, Giovanni Battista" />
-<h4> <i>Feel the oils from the 1700's</i> </h4>
+<h4> <i>Feel the oils and wood from the 1700's</i> </h4>
 </td></tr>
 
 <tr></tr>
