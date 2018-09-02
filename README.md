@@ -74,11 +74,15 @@ Or, if you prefer using the light version try this:
     set background=dark
     colorscheme vim-vintage
     ```
-If you have vim-airline or lightline, add that too.
+If you have vim-airline, you can now add that too.
     ```
-    Currently not avaliable. Wait for the next couple of adjustments. Thank you for your patience.
+    let g:airline_theme='vintage_dark'
     ```
-  
+Or, if you prefer the light version:
+    ```
+    let g:airline_theme='vintage_light'
+    ```
+   
 **Important Note for Terminal Users** If your terminal is **not** compatible with my colorscheme please look to my temporary documentation for 16 color palette values. Thank you.
 <!-- Add in documentation on README for terminal users and after making the vim files, make the vim-airline and/or lightline themes as well -->
 
