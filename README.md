@@ -10,12 +10,12 @@
 <tr>
 <td>
 <br>
-<img alt="screenshot of the vim-vintage color theme, light version" src="https://github.com/Shaedil/vim-vintage-colorscheme/raw/master/images/Vintage-light.png" width="430" />
+<img alt="screenshot of the vim-vintage color theme, light version" src="https://github.com/Shaedil/vim-vintage-colorscheme/raw/master/images/Vintage-light.PNG" width="430" />
 <br>
 </td>
 <td>
 <br>
-<img alt="screenshot of the vim-vintage color theme, dark version" src="https://github.com/Shaedil/vim-vintage-colorscheme/raw/master/images/Vintage-dark.png" width="430" />
+<img alt="screenshot of the vim-vintage color theme, dark version" src="https://github.com/Shaedil/vim-vintage-colorscheme/raw/master/images/Vintage-dark.PNG" width="430" />
 <br>
 </td>
 </tr>
