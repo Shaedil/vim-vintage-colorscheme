@@ -10,9 +10,7 @@
 </tbody></table>
 
 ## Configuration (Modify your vimrc)
-    ```
     colorscheme vintage
-    ```
 If you have vim-airline, you can now add that too.
     ```
     let g:airline_theme='vintage'
