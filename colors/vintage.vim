@@ -84,7 +84,7 @@ hi EnumerationName guifg=#a9a79e guibg=NONE guisp=NONE gui=NONE ctermfg=254 cter
 hi Visual guifg=NONE guibg=#2e2e2e guisp=NONE gui=NONE ctermfg=NONE ctermbg=237 cterm=NONE
 hi MoreMsg guifg=#57a3c6 guibg=NONE guisp=NONE gui=NONE ctermfg=32 ctermbg=NONE cterm=NONE
 hi SpellCap guifg=#e2e4e5 guibg=#a45444 guisp=#a45444 gui=NONE ctermfg=254 ctermbg=9 cterm=NONE
-hi VertSplit guifg=#383838 guibg=#211e1a guisp=#211e1a gui=NONE ctermfg=237 ctermbg=234 cterm=NONE
+hi VertSplit guifg=#755d3a guibg=#755d3a guisp=#755d3a gui=NONE ctermfg=237 ctermbg=234 cterm=NONE
 hi Exception guifg=#a5bf73 guibg=NONE guisp=NONE gui=NONE ctermfg=71 ctermbg=NONE cterm=NONE
 hi Keyword guifg=#a5bf73 guibg=NONE guisp=NONE gui=NONE ctermfg=142 ctermbg=NONE cterm=NONE
 hi Type guifg=#b59b51 guibg=NONE guisp=NONE gui=NONE ctermfg=136 ctermbg=NONE cterm=NONE 
