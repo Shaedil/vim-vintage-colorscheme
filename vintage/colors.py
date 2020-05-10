@@ -28,8 +28,8 @@ class DominantColors:
             hexColors.append(hexColor)
         return hexColors
 
-    # for graphing color
     def rgb_to_hex(self, rgb):
+        # for graphing color
         return '#%02x%02x%02x' % (int(rgb[0]), int(rgb[1]), int(rgb[2]))
 
     def hexToRGB(self, value):
@@ -58,7 +58,7 @@ class DominantColors:
 
     def plotHistogram(self):
         # labels form 0 to no. of clusters
-        numLabels = np.arange(0, self.CLUSTERS+1)
+        numLabels = self.CLUSTERS
         # create frequency count tables
         (hist, _) = np.histogram(self.LABELS, bins=numLabels)
         hist = hist.astype("float")
@@ -82,47 +82,43 @@ class DominantColors:
         return self.COLORS.astype(int)
 
 
-def start():
-    # obtain the img.jpeg from the relative path
-    img = str(input("What is the input image's relative path?: "))
+def toMatrix(l, n):
+    return [l[i:i+n] for i in range(0, len(l), n)]
+
+
+def start(img):
+    # img is defined as either 'filename.jpeg' or 'filename.png'
     filename = img.rsplit('/', 1)  # remove .jpeg from img
     filen = filename[1].rsplit('.', 1)
     try:
         f = open(filen[0] + ".txt")  # parse file
         stringColorList = f.read()  # a string representation of a list
         hexcolorlist = eval(stringColorList)  # convert to actual list
-        # print the colors from the file
+        # init class with list
         dc = DominantColors(img, len(hexcolorlist))
-        # From here one out, requires rgb
+        # From here on out, requires rgb
         rgbcolorList = []
-        for i in range(0, len(hexcolorlist[0])):
-            x = hexcolorlist[0][i]
+        for i in range(0, len(hexcolorlist)):
+            x = hexcolorlist[i]
             x = dc.hexToRGB(x)
             rgbcolorList.append(x)
         print(dc.printColor(rgbcolorList))
-        print(hexcolorlist[0])
+        # print(hexcolorlist[0])
         f.close()
     except FileNotFoundError:
         # The intermediary file does not exist
         print("File not accessible or found... creating new file instead")
         clusters = int(input("What is the desired number of colors?: "))
         dc = DominantColors(img, clusters)
-        colors = dc.dominantColors()  # color = list of rgb colors
-        
+        colors = dc.dominantColors()  # colors = list of rgb colors
+        colors = dc.plotHistogram()  # sort the generated list of colors
         intermediaryColors = colors.tolist()  # nd array to plain list
+        intermediaryColors = toMatrix([round(y) for x in
+                                       range(len(intermediaryColors))
+                                       for y in intermediaryColors[x]], 3)
         intermediaryColors = dc.rgbToHex(intermediaryColors)
-        finalColors = []  # an empty list in which values will go into
         with open(filen[0] + ".txt", "a") as f:
-            finalColors.append(intermediaryColors)
-            print(finalColors, file=f)
             # write list of rgb colors to a new file
+            print(intermediaryColors, file=f)
         print(dc.printColor(colors))
-        print(dc.rgbToHex(colors))
-
-
-img = '../Documents/LaTeX/Pre-Calculus/colors.jpeg'
-clusters = 5
-dc = DominantColors(img, clusters)
-colors = dc.dominantColors()
-print(dc.plotHistogram())
-# start()
+        print(intermediaryColors)
