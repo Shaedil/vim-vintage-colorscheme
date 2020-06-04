@@ -99,7 +99,7 @@ def start(img, clusters):
     filename = img.rsplit('/', 1)  # remove .jpeg from img
     filen = filename[1].rsplit('.', 1)
     try:
-        f = open("./dataset/" + filen[0] + ".txt")  # parse file
+        f = open(filename[0] + '/' + filen[0] + ".txt")  # parse file
         stringColorList = f.read()  # a string representation of a list
         hexcolorlist = eval(stringColorList)  # convert to actual list
         # init class with list
@@ -124,7 +124,7 @@ def start(img, clusters):
                                        range(len(intermediaryColors))
                                        for y in intermediaryColors[x]], 3)
         intermediaryColors = dc.rgbToHex(intermediaryColors)
-        with open("./dataset/" + filen[0] + ".txt", "w") as f:
+        with open(filename[0] + '/' + filen[0] + ".txt", "w") as f:
             # write list of rgb colors to a new file
             print(intermediaryColors, file=f)
         print(dc.printColor(colors))
@@ -138,6 +138,7 @@ def hexToRGB(value):
     y = int(h[2:4], 16)
     z = int(h[4:6], 16)
     return [x, y, z]
+
 
 colors = {
     '000000':  '16', '00005f':  '17', '000087':  '18', '0000af':  '19',
@@ -243,15 +244,15 @@ def rgb2lab(rgb):
     x = 0
     y = 0
     z = 0
-    r = (r > 0.04045) if (math.pow((r + 0.055) / 1.055, 2.4)) else r / 12.92
-    g = (g > 0.04045) if (math.pow((g + 0.055) / 1.055, 2.4)) else g / 12.92
-    b = (b > 0.04045) if (math.pow((b + 0.055) / 1.055, 2.4)) else b / 12.92
+    r = (math.pow((r + 0.055) / 1.055, 2.4)) if (r > 0.04045) else r / 12.92
+    g = (math.pow((g + 0.055) / 1.055, 2.4)) if (g > 0.04045) else g / 12.92
+    b = (math.pow((b + 0.055) / 1.055, 2.4)) if (b > 0.04045) else b / 12.92
     x = (r * 0.4124 + g * 0.3576 + b * 0.1805) / 0.95047
     y = (r * 0.2126 + g * 0.7152 + b * 0.0722) / 1.00000
     z = (r * 0.0193 + g * 0.1192 + b * 0.9505) / 1.08883
-    x = (x > 0.008856) if math.pow(x, 1/3) else (7.787 * x) + 16/116
-    y = (y > 0.008856) if math.pow(y, 1/3) else (7.787 * y) + 16/116
-    z = (z > 0.008856) if math.pow(z, 1/3) else (7.787 * z) + 16/116
+    x = math.pow(x, 1/3) if (x > 0.008856) else (7.787 * x) + 16/116
+    y = math.pow(y, 1/3) if (y > 0.008856) else (7.787 * y) + 16/116
+    z = math.pow(z, 1/3) if (z > 0.008856) else (7.787 * z) + 16/116
     return [(116 * y) - 16, 500 * (x - y), 200 * (y - z)]
 
 
@@ -263,11 +264,11 @@ def deltaE(labA, labB):
     c2 = math.sqrt(labB[1] * labB[1] + labB[2] * labB[2])
     deltaC = c1 - c2
     deltaH = deltaA * deltaA + deltaB * deltaB - deltaC * deltaC
-    deltaH = deltaH < 0 if 0 else math.sqrt(deltaH)
+    deltaH = 0 if deltaH < 0 else math.sqrt(deltaH)
     sc = 1.0 + 0.045 * c1
     sh = 1.0 + 0.015 * c1
     deltaLKlsl = deltaL / (1.0)
     deltaCkcsc = deltaC / (sc)
     deltaHkhsh = deltaH / (sh)
     i = deltaLKlsl * deltaLKlsl + deltaCkcsc * deltaCkcsc + deltaHkhsh * deltaHkhsh
-    return i < 0 if 0 else math.sqrt(i)
+    return 0 if i < 0 else math.sqrt(i)
