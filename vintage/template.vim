@@ -11,16 +11,16 @@ endif
 let g:colors_name = "template"
 " Color Templates
 " Global color values
-let g:black  =  
-let g:gray   =  
-let g:gray2  =  
-let g:red    =  
-let g:green  =  
-let g:yellow =  
-let g:blue   =  
-let g:orange =  
-let g:violet =  
-let g:white  =  
+" let g:black  =  
+" let g:gray   =  
+" let g:gray2  =  
+" let g:red    =  
+" let g:green  =  
+" let g:yellow =  
+" let g:blue   =  
+" let g:orange =  
+" let g:violet =  
+" let g:white  =  
 
 "Highlight      guifg           guibg           ctermfg              ctermbg            gui             cterm
 hi Normal		guifg=g:gray 	guibg=g:black	ctermfg=g:gray    ctermbg=g:black

@@ -9,7 +9,7 @@ from sklearn.cluster import KMeans
 import numpy as np
 import colors as col
 from colors import DominantColors
-# import generate
+import generate
 # import compare
 
 
@@ -31,7 +31,7 @@ def batchGenerate():
             filepath = subdir + os.sep + filename
             if (filepath.endswith(".txt")):
                 print(filepath)
-                # generate.Generate(filepath)
+                generate.Generate(filepath)
 
 
 def catPalettes():
