@@ -54,11 +54,11 @@ endfunction
 "green  #9b9d67 "h" 8 matches   '#334349'  
 "grey1  #6c4528 "g" 4 matches   '#a0835f'   
 "grey3  #66704a "f" 3 matches   '#dd8c3d'   
-"brown  #808756 "e" 4 matches   '#dc6235'  
+"brown  #808756 "e" 4 matches   '#dc6235'   
 "grey2  #4f4f3d "d" 6 matches   '#15150f'  
-"bg     #452d26 "c" 4 matches   '#7c644b' 
+"bg     #452d26 "c" 4 matches   '#7c644b'  
 "bg2    #160d1f "b" 9 matches   '#5c4837' 
-"bg1    #2b1c27 "a" 7 matches   '#302b26'
+"bg1    #2b1c27 "a" 7 matches   '#302b26' 
 
 call s:hi("Normal",         "", "", "224",    "236",      "none", "")
 call s:hi("Cursor",         "", "", "f",    "d",      "none", "")

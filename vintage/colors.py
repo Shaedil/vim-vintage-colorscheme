@@ -36,10 +36,6 @@ class DominantColors:
             hexColors.append(hexColor)
         return hexColors
 
-    def rgb_to_hex(self, rgb):
-        # for graphing color
-        return '#%02x%02x%02x' % (int(rgb[0]), int(rgb[1]), int(rgb[2]))
-
     def hexToRGB(self, value):
         # works for one hex value at a time
         h = value.strip('#')
@@ -55,6 +51,10 @@ class DominantColors:
             b = int(rgb[CLUSTERS][2])
             foo = bg(r, g, b) + '                        ' + rs.bg
             print(str(CLUSTERS+1) + foo)
+
+    def rgb_to_hex(self, rgb):
+        # for graphing color
+        return '#%02x%02x%02x' % (int(rgb[0]), int(rgb[1]), int(rgb[2]))
 
     def plotClusters(self):
         fig = plt.figure()

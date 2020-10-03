@@ -2,7 +2,7 @@
 # Generate.py - Script that generates vim colorschemes
 #               with pre-generated hex color codes.
 # Author:  Shaedil Dider
-# Last Change: 2020 May 17
+# Last Change: 2020 Sept 23
 ########################################################
 import fileinput
 import shutil
@@ -13,16 +13,17 @@ import colors as col
 def Generate(filename):
     # Grabs filename* colors and assign each to a key in colorDict
     filen = filename.rsplit('.', 1)
-    colorList = eval(open("./dataset/" + filename).read())
+    colorList = eval(open("./" + filename).read())
     filename = filen[0] + ".vim"
-    keys = ('\"a\",', '\"b\",', '\"c\",', '\"d\",', '\"e\",', '\"f\",',
-            '\"g\",', '\"h\",', '\"i\",', '\"j\",', '\"k\",')
-    values = ('\"'+col.bestMatch(colors)+'\",' for colors in colorList)
+    keys = ('\"a\"', '\"b\"', '\"c\"', '\"d\"', '\"e\"', '\"f\"',
+            '\"g\"', '\"h\"', '\"i\"', '\"j\"', '\"k\"')
+    # values = ('\"'+col.bestMatch(colors)+'\",' for colors in colorList)
+    values = ('\"'+colors+'\"' for colors in colorList)
     colorDict = dict(zip(keys, values))
     print(colorDict)  # For debugging purposes
-    shutil.copy2("./temp.vim", "./" + filename)
+    shutil.copy2("./tempactual.vim", "./" + filename)
     for letter in list(map(chr, range(97, 108))):
-        letter = '\"' + letter + '\",'
+        letter = '\"' + letter + '\"'
         traverseAndReplace(filename, letter, colorDict.get(letter))
     removeEmptyLines(filename)
 
@@ -46,4 +47,4 @@ def removeEmptyLines(filename):
 
 
 # For debugging purposes
-Generate('scream.txt')
+Generate('color.txt')
