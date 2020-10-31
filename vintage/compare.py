@@ -4,7 +4,7 @@
 #             frequency list and quantifies it with a
 #             percentage
 # Author:  Shaedil Dider
-# Last Change: 2020 Oct 30 
+# Last Change: 2020 Oct 30
 ###########################################################
 
 import colors
@@ -14,6 +14,7 @@ from statistics import mean
 # Process them into RGB>LAB values using colors library
 # Comparison algorithm using delta E algorithm
 # https://stackoverflow.com/a/52453462/6273236
+
 
 def compareTwoColorSets(firstFile, secondFile):
 
@@ -26,25 +27,28 @@ def compareTwoColorSets(firstFile, secondFile):
 
     return printLevelOfPerceptibility(meanSimilarityBetweenBothColorSets)
 
-def convertColorSetToLAB(inputColorSet): 
+
+def convertColorSetToLAB(inputColorSet):
     colorSetInLAB = []
-    for eachColorScheme in inputColorSet)):
+    for eachColorScheme in inputColorSet:
         eachColorSchemeInRBG = colors.hexToRGB(eachColorScheme)
         eachColorSchemeInLAB = colors.rgb2lab(eachColorSchemeInRBG)
         colorSetInLAB.append(eachColorSchemeInLAB)
     return colorSetInLAB.sort()
 
-def calculateMeanSimularityOfTwoColorSets(firstColorSetInLAB, secondColorSetInLAB): 
-    arrayOfSimilarities = []
-    totalNumberOfColors = len(convertedFirstColorSet)
-    for eachColor in range(totalNumberOfColors) 
-        firstColorToCompare = convertedFirstColorSet[eachColor]
-        secondColorToCompare = convertedSecondColorSet[eachColor]
-        similarityBetweenTwoColors = color.deltaE(firstColorToCompare, secondColorToCompare)
-        arrayOfSimilarities.append(similarityBetweenTwoColors)
-    return(mean(arrayOfSimilarities))
 
-def printLevelOfPerceptibility(meanSimilarityBetweenBothColorSets): 
+def calculateMeanSimularityOfTwoColorSets(firstColorSetInLAB, secondColorSetInLAB):
+    arrayOfSimilarities = []
+    totalNumberOfColors = len(firstColorSetInLAB)
+    for eachColor in range(totalNumberOfColors):
+        firstColorToCompare = firstColorSetInLAB[eachColor]
+        secondColorToCompare = secondColorSetInLAB[eachColor]
+        similarityBetweenTwoColors = colors.deltaE(firstColorToCompare, secondColorToCompare)
+        arrayOfSimilarities.append(similarityBetweenTwoColors)
+    return mean(arrayOfSimilarities)
+
+
+def printLevelOfPerceptibility(meanSimilarityBetweenBothColorSets):
     if (meanSimilarityBetweenBothColorSets <= 1.0):
         print("Delta E:    <= 1.0")
         print("Perception: The difference in the color set of the paintings are not perceptible by human eyes")

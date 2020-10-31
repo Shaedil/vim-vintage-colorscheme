@@ -1,0 +1,150 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+CLUSTERS	vintage/colors.py	/^    CLUSTERS = None$/;"	v	class:DominantColors
+COLORS	vintage/colors.py	/^    COLORS = None$/;"	v	class:DominantColors
+Decompose	vintage/colors.py	/^def Decompose(hexval):$/;"	f
+DominantColors	vintage/colors.py	/^class DominantColors:$/;"	c
+Generate	vintage/generate.py	/^def Generate(filename):$/;"	f
+IMAGE	vintage/colors.py	/^    IMAGE = None$/;"	v	class:DominantColors
+LABELS	vintage/colors.py	/^    LABELS = None$/;"	v	class:DominantColors
+Normalize	vintage/colors.py	/^def Normalize(r, g, b):$/;"	f
+VintageGenerate	plugin/vintage.vim	/^command! VintageGenerate :execute ':call vintage#GenerateIntemediaryFile("'. input("filename: ") . '")'$/;"	c
+VintageSwitch	plugin/vintage.vim	/^command! VintageSwitch :execute ':call vintage#SearchIntemediaryFile("'. input("filename: ") . '")'$/;"	c
+__init__	vintage/colors.py	/^    def __init__(self, image, clusters):$/;"	m	class:DominantColors
+appendLists	vintage/batchprocess.py	/^def appendLists():$/;"	f
+batchColors	vintage/batchprocess.py	/^def batchColors():$/;"	f
+batchCompare	vintage/batchprocess.py	/^def batchCompare(X, n):$/;"	f
+batchGenerate	vintage/batchprocess.py	/^def batchGenerate():$/;"	f
+bestMatch	vintage/colors.py	/^def bestMatch(hexval):$/;"	f
+calculateMeanSimularityOfTwoColorSets	vintage/compare.py	/^def calculateMeanSimularityOfTwoColorSets(firstColorSetInLAB, secondColorSetInLAB):$/;"	f
+catPalettes	vintage/batchprocess.py	/^def catPalettes():$/;"	f
+colorDist	vintage/colors.py	/^def colorDist(c1, c2):$/;"	f
+colors	vintage/colors.py	/^colors = {$/;"	v
+compareTwoColorSets	vintage/compare.py	/^def compareTwoColorSets(firstFile, secondFile):$/;"	f
+convertColorSetToLAB	vintage/compare.py	/^def convertColorSetToLAB(inputColorSet):$/;"	f
+deltaE	vintage/colors.py	/^def deltaE(labA, labB):$/;"	f
+dominantColors	vintage/colors.py	/^    def dominantColors(self):$/;"	m	class:DominantColors
+g:airline#themes#vintage#palette	colors/Airline theme/vintage.vim	/^let g:airline#themes#vintage#palette = {}$/;"	v
+g:airline#themes#vintage#palette	colors/Airline theme/vintage.vim	/^let g:airline#themes#vintage#palette.inactive = airline#themes#generate_color_map(s:IC, s:IB, s:IA)$/;"	v
+g:airline#themes#vintage#palette	colors/Airline theme/vintage.vim	/^let g:airline#themes#vintage#palette.insert   = airline#themes#generate_color_map(s:I1, s:I2, s:I3)$/;"	v
+g:airline#themes#vintage#palette	colors/Airline theme/vintage.vim	/^let g:airline#themes#vintage#palette.insert_modified  = {$/;"	v
+g:airline#themes#vintage#palette	colors/Airline theme/vintage.vim	/^let g:airline#themes#vintage#palette.normal   = airline#themes#generate_color_map(s:N1, s:N2, s:N3)$/;"	v
+g:airline#themes#vintage#palette	colors/Airline theme/vintage.vim	/^let g:airline#themes#vintage#palette.normal_modified  = {$/;"	v
+g:airline#themes#vintage#palette	colors/Airline theme/vintage.vim	/^let g:airline#themes#vintage#palette.replace  = airline#themes#generate_color_map(s:R1, s:R2, s:R3)$/;"	v
+g:airline#themes#vintage#palette	colors/Airline theme/vintage.vim	/^let g:airline#themes#vintage#palette.replace_modified = {$/;"	v
+g:airline#themes#vintage#palette	colors/Airline theme/vintage.vim	/^let g:airline#themes#vintage#palette.visual   = airline#themes#generate_color_map(s:V1, s:V2, s:V3)$/;"	v
+g:airline#themes#vintage#palette	colors/Airline theme/vintage.vim	/^let g:airline#themes#vintage#palette.visual_modified  = {$/;"	v
+g:colors_name	colors/vintage.vim	/^let g:colors_name = "vintage"$/;"	v
+g:colors_name	vintage/temp.vim	/^let g:colors_name = ""$/;"	v
+g:colors_name	vintage/template.vim	/^let g:colors_name = "template"$/;"	v
+hexToRGB	vintage/colors.py	/^    def hexToRGB(self, value):$/;"	m	class:DominantColors
+hexToRGB	vintage/colors.py	/^def hexToRGB(value):$/;"	f
+hi	vintage/color.vim	/^function! s:hi(group, guifg, guibg, ctermfg, ctermbg, attr, guisp)$/;"	f
+hi	vintage/pearlgirl.vim	/^function! s:hi(group, guifg, guibg, ctermfg, ctermbg, attr, guisp)$/;"	f
+hi	vintage/starry.vim	/^function! s:hi(group, guifg, guibg, ctermfg, ctermbg, attr, guisp)$/;"	f
+hi	vintage/temp.vim	/^function! s:hi(group, guifg, guibg, ctermfg, ctermbg, attr, guisp)$/;"	f
+hi	vintage/temp2.vim	/^function! s:hi(group, guifg, guibg, ctermfg, ctermbg, attr, guisp)$/;"	f
+hi	vintage/tempactual.vim	/^function! s:hi(group, guifg, guibg, ctermfg, ctermbg, attr, guisp)$/;"	f
+plotClusters	vintage/colors.py	/^    def plotClusters(self):$/;"	m	class:DominantColors
+plotHistogram	vintage/colors.py	/^    def plotHistogram(self):$/;"	m	class:DominantColors
+printColor	vintage/colors.py	/^    def printColor(self, rgb):$/;"	m	class:DominantColors
+printLevelOfPerceptibility	vintage/compare.py	/^def printLevelOfPerceptibility(meanSimilarityBetweenBothColorSets):$/;"	f
+removeEmptyLines	vintage/generate.py	/^def removeEmptyLines(filename):$/;"	f
+rgb2lab	vintage/colors.py	/^def rgb2lab(rgb):$/;"	f
+rgbToHex	vintage/colors.py	/^    def rgbToHex(self, rgb):$/;"	m	class:DominantColors
+rgb_to_hex	vintage/colors.py	/^    def rgb_to_hex(self, rgb):$/;"	m	class:DominantColors
+s:I1	colors/Airline theme/vintage.vim	/^let s:I1 = [ s:gry0[0]  , s:whit[0] , 234 , 255 ] $/;"	v
+s:I2	colors/Airline theme/vintage.vim	/^let s:I2 = [ s:whit[0]  , '#47AF00' , 255 , 70  ]$/;"	v
+s:I3	colors/Airline theme/vintage.vim	/^let s:I3 = [ s:whit[0]  , '#2E8700' , 255 , 28  ]$/;"	v
+s:IA	colors/Airline theme/vintage.vim	/^let s:IA = [ s:N2[0], s:N3[1]  , s:N2[2], s:N3[3], '' ] "inactive mode airline_a$/;"	v
+s:IB	colors/Airline theme/vintage.vim	/^let s:IB = [ s:N2[0], '#444444', s:N2[2], s:N1[3], '' ] "inactive mode airline_b$/;"	v
+s:IC	colors/Airline theme/vintage.vim	/^let s:IC = [ s:N3[1], s:N1[1]  , s:N3[3], s:N1[3], '' ] "inactive mode airline_c$/;"	v
+s:N1	colors/Airline theme/vintage.vim	/^let s:N1 = [ s:gry0[0]  , s:whit[0] , 234 , 255 ] " A section$/;"	v
+s:N2	colors/Airline theme/vintage.vim	/^let s:N2 = [ s:whit[0]  , '#0087af' , 188 , 31  ] " B section$/;"	v
+s:N3	colors/Airline theme/vintage.vim	/^let s:N3 = [ s:whit[0]  , s:blck[0] , 188 , 234 ] " C section$/;"	v
+s:R1	colors/Airline theme/vintage.vim	/^let s:R1 = [ s:gry0[0]  , s:whit[0] , 234 , 255 ] $/;"	v
+s:R2	colors/Airline theme/vintage.vim	/^let s:R2 = [ s:whit[0]  , '#AF2800' , 255 , 124 ] $/;"	v
+s:R3	colors/Airline theme/vintage.vim	/^let s:R3 = [ s:whit[0]  , '#872800' , 255 , 88  ]$/;"	v
+s:V1	colors/Airline theme/vintage.vim	/^let s:V1 = [ s:gry0[0]  , s:whit[0] , 234 , 255 ] $/;"	v
+s:V2	colors/Airline theme/vintage.vim	/^let s:V2 = [ s:whit[0]  , '#B0AE00' , 255 , 184 ]$/;"	v
+s:V3	colors/Airline theme/vintage.vim	/^let s:V3 = [ s:whit[0]  , '#918F00' , 255 , 142 ]$/;"	v
+s:blck	colors/Airline theme/vintage.vim	/^let s:blck      = [ "#211e1a", 234 ] "bg color$/;"	v
+s:blue	colors/Airline theme/vintage.vim	/^let s:blue      = [ "#57a3c6", 24  ] "dark cyan$/;"	v
+s:brwn	colors/Airline theme/vintage.vim	/^let s:brwn      = [ "#866234", 100 ] "pale dirt brown$/;"	v
+s:color0_gui	vintage/color.vim	/^let s:color0_gui = "#130709"$/;"	v
+s:color0_gui	vintage/pearlgirl.vim	/^let s:color0_gui = "#130e05"$/;"	v
+s:color0_gui	vintage/starry.vim	/^let s:color0_gui = "#445f8c"$/;"	v
+s:color0_gui	vintage/temp2.vim	/^let s:color0_gui =  "#2E3440"$/;"	v
+s:color0_gui	vintage/tempactual.vim	/^let s:color0_gui = "a"$/;"	v
+s:color10_gui	vintage/color.vim	/^let s:color10_gui = "#2a66b9"$/;"	v
+s:color10_gui	vintage/pearlgirl.vim	/^let s:color10_gui = "#283542"$/;"	v
+s:color10_gui	vintage/starry.vim	/^let s:color10_gui = "#6f8181"$/;"	v
+s:color10_gui	vintage/temp2.vim	/^let s:color10_gui = "#5E81AC"$/;"	v
+s:color10_gui	vintage/tempactual.vim	/^let s:color10_gui = "g"$/;"	v
+s:color11_gui	vintage/color.vim	/^let s:color11_gui = "#705c6a"$/;"	v
+s:color11_gui	vintage/pearlgirl.vim	/^let s:color11_gui = "#c0a688"$/;"	v
+s:color11_gui	vintage/starry.vim	/^let s:color11_gui = "#a7ad87"$/;"	v
+s:color11_gui	vintage/temp2.vim	/^let s:color11_gui = "#BF616A"$/;"	v
+s:color11_gui	vintage/tempactual.vim	/^let s:color11_gui = "h"$/;"	v
+s:color12_gui	vintage/color.vim	/^let s:color12_gui = "#f0f1e0"$/;"	v
+s:color12_gui	vintage/pearlgirl.vim	/^let s:color12_gui = "#93a2af"$/;"	v
+s:color12_gui	vintage/starry.vim	/^let s:color12_gui = "#49565a"$/;"	v
+s:color12_gui	vintage/temp2.vim	/^let s:color12_gui = "#D08770"$/;"	v
+s:color12_gui	vintage/tempactual.vim	/^let s:color12_gui = "i"$/;"	v
+s:color13_gui	vintage/color.vim	/^let s:color13_gui = "#f7dc56"$/;"	v
+s:color13_gui	vintage/pearlgirl.vim	/^let s:color13_gui = "#dcc8b5"$/;"	v
+s:color13_gui	vintage/starry.vim	/^let s:color13_gui = "#adbab5"$/;"	v
+s:color13_gui	vintage/temp2.vim	/^let s:color13_gui = "#EBCB8B"$/;"	v
+s:color13_gui	vintage/tempactual.vim	/^let s:color13_gui = "j"$/;"	v
+s:color14_gui	vintage/color.vim	/^let s:color14_gui = "#cc8a9b"$/;"	v
+s:color14_gui	vintage/pearlgirl.vim	/^let s:color14_gui = "#607383"$/;"	v
+s:color14_gui	vintage/starry.vim	/^let s:color14_gui = "#aa9b34"$/;"	v
+s:color14_gui	vintage/temp2.vim	/^let s:color14_gui = "#A3BE8C"$/;"	v
+s:color14_gui	vintage/tempactual.vim	/^let s:color14_gui = "k"$/;"	v
+s:color1_gui	vintage/color.vim	/^let s:color1_gui = "#e30f0c"$/;"	v
+s:color1_gui	vintage/pearlgirl.vim	/^let s:color1_gui = "#1a160c"$/;"	v
+s:color1_gui	vintage/starry.vim	/^let s:color1_gui = "#5b79a1"$/;"	v
+s:color1_gui	vintage/temp2.vim	/^let s:color1_gui =  "#3B4252"$/;"	v
+s:color1_gui	vintage/tempactual.vim	/^let s:color1_gui = "b"$/;"	v
+s:color4_gui	vintage/color.vim	/^let s:color4_gui = "#7e0b0c"$/;"	v
+s:color4_gui	vintage/pearlgirl.vim	/^let s:color4_gui = "#2b271b"$/;"	v
+s:color4_gui	vintage/starry.vim	/^let s:color4_gui = "#15191c"$/;"	v
+s:color4_gui	vintage/temp2.vim	/^let s:color4_gui =  "#D8DEE9"$/;"	v
+s:color4_gui	vintage/tempactual.vim	/^let s:color4_gui = "c"$/;"	v
+s:color5_gui	vintage/color.vim	/^let s:color5_gui = "#f36423"$/;"	v
+s:color5_gui	vintage/pearlgirl.vim	/^let s:color5_gui = "#4d422d"$/;"	v
+s:color5_gui	vintage/starry.vim	/^let s:color5_gui = "#252f40"$/;"	v
+s:color5_gui	vintage/temp2.vim	/^let s:color5_gui =  "#E5E9F0"$/;"	v
+s:color5_gui	vintage/tempactual.vim	/^let s:color5_gui = "d"$/;"	v
+s:color7_gui	vintage/color.vim	/^let s:color7_gui = "#272f57"$/;"	v
+s:color7_gui	vintage/pearlgirl.vim	/^let s:color7_gui = "#726044"$/;"	v
+s:color7_gui	vintage/starry.vim	/^let s:color7_gui = "#2b3f74"$/;"	v
+s:color7_gui	vintage/temp2.vim	/^let s:color7_gui =  "#8FBCBB"$/;"	v
+s:color7_gui	vintage/tempactual.vim	/^let s:color7_gui = "e"$/;"	v
+s:color9_gui	vintage/color.vim	/^let s:color9_gui = "#6cb6e9"$/;"	v
+s:color9_gui	vintage/pearlgirl.vim	/^let s:color9_gui = "#9a8057"$/;"	v
+s:color9_gui	vintage/starry.vim	/^let s:color9_gui = "#8097aa"$/;"	v
+s:color9_gui	vintage/temp2.vim	/^let s:color9_gui =  "#81A1C1"$/;"	v
+s:color9_gui	vintage/tempactual.vim	/^let s:color9_gui = "f"$/;"	v
+s:global_cpo	plugin/vintage.vim	/^let s:global_cpo = &cpo " vi compatible mode in local var$/;"	v
+s:gren	colors/Airline theme/vintage.vim	/^let s:gren      = [ "#7e9736", 34  ] "pale green$/;"	v
+s:gry0	colors/Airline theme/vintage.vim	/^let s:gry0      = [ "#282520", 234 ] "lighter bg color$/;"	v
+s:gry1	colors/Airline theme/vintage.vim	/^let s:gry1      = [ "#a9a79e", 248 ] "regular grey$/;"	v
+s:gry3	colors/Airline theme/vintage.vim	/^let s:gry3      = [ "#a2a097", 246 ] "light grey$/;"	v
+s:gryblu	colors/Airline theme/vintage.vim	/^let s:gryblu    = [ "#94ABBE", 18  ] "Steel blue$/;"	v
+s:oran	colors/Airline theme/vintage.vim	/^let s:oran      = [ "#baa118", 16  ] "dark gold brass$/;"	v
+s:path	plugin/vintage.vim	/^let s:path = '~\/.vim\/plugged\/vim-vintage\/'$/;"	v
+s:purp	colors/Airline theme/vintage.vim	/^let s:purp      = [ "#414a99", 19  ] "almost indigo$/;"	v
+s:red	colors/Airline theme/vintage.vim	/^let s:red       = [ "#a45444", 124 ] "crimson red$/;"	v
+s:whit	colors/Airline theme/vintage.vim	/^let s:whit      = [ "#f2f2f2", 255 ] "teeth white$/;"	v
+start	vintage/batchprocess.py	/^def start():$/;"	f
+start	vintage/colors.py	/^def start(img, clusters):$/;"	f
+toMatrix	vintage/colors.py	/^def toMatrix(l, n):$/;"	f
+traverseAndReplace	vintage/generate.py	/^def traverseAndReplace(fileIn, findString, replaceString):$/;"	f
+vintage#GenerateColorFile	plugin/vintage.vim	/^function! vintage#GenerateColorFile()$/;"	f
+vintage#GenerateIntemediaryFile	plugin/vintage.vim	/^function! vintage#GenerateIntemediaryFile(file)$/;"	f
+vintage#SearchIntemediaryFile	plugin/vintage.vim	/^function! vintage#SearchIntemediaryFile(file)$/;"	f
