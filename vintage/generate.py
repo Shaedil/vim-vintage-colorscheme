@@ -2,7 +2,6 @@
 # Generate.py - Script that generates vim colorschemes
 #               with pre-generated hex color codes.
 # Author:  Shaedil Dider
-# Last Change: 2020 Sept 23
 ########################################################
 import fileinput
 import shutil
