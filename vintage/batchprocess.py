@@ -2,8 +2,8 @@
 # batchProcess.py - Script that performs processes in
 #                   batches on multiple files at once.
 # Author:  Shaedil Dider
-# Last Change: 2020 May 17
 ########################################################
+
 import os
 from sklearn.cluster import KMeans
 import numpy as np
@@ -11,7 +11,6 @@ import colors as col
 from colors import DominantColors
 import generate
 # import compare
-
 
 def batchColors():
     for subdir, dirs, files in os.walk("./dataset"):

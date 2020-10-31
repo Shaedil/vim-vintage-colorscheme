@@ -2,7 +2,6 @@
 # Colors.py - Script that obtains set of frequent colors
 #             in order of frequency using KMeans library
 # Author:  Shaedil Dider
-# Last Change: 2020 May 17
 ########################################################
 import matplotlib.pyplot as plt
 import cv2
