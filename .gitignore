@@ -140,3 +140,7 @@ cython_debug/
 *.png
 *.jpg
 *.jpeg
+
+# Vim 
+*.swp
+*.swc
