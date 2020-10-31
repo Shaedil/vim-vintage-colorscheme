@@ -4,7 +4,6 @@
 #             frequency list and quantifies it with a
 #             percentage
 # Author:  Shaedil Dider
-# Last Change: 2020 Oct 30
 ###########################################################
 
 import colors
