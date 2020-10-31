@@ -15,56 +15,52 @@ from statistics import mean
 # https://stackoverflow.com/a/52453462/6273236
 
 
-def compareTwoColorSets(firstFile, secondFile):
+def compare_color_sets(first_file, second_file):
+    color_set1 = eval(open("./dataset/" + first_file).read())
+    color_set2 = eval(open("./dataset/" + second_file).read())
+    converted_set1 = convert_color_set_to_LAB(color_set1)
+    converted_set2 = convert_color_set_to_LAB(color_set2)
 
-    firstColorSet = eval(open("./dataset/" + firstFile).read())
-    secondColorSet = eval(open("./dataset/" + secondFile).read())
-    convertedFirstColorSet = convertColorSetToLAB(firstColorSet)
-    convertedSecondColorSet = convertColorSetToLAB(secondColorSet)
+    mean_similarity = calculate_mean_simularity(converted_set1, converted_set2)
+    print_level_of_perceptibility(mean_similarity)
 
-    meanSimilarityBetweenBothColorSets = calculateMeanSimularityOfTwoColorSets(convertedFirstColorSet, convertedSecondColorSet)
-
-    return printLevelOfPerceptibility(meanSimilarityBetweenBothColorSets)
-
-
-def convertColorSetToLAB(inputColorSet):
-    colorSetInLAB = []
-    for eachColorScheme in inputColorSet:
-        eachColorSchemeInRBG = colors.hexToRGB(eachColorScheme)
-        eachColorSchemeInLAB = colors.rgb2lab(eachColorSchemeInRBG)
-        colorSetInLAB.append(eachColorSchemeInLAB)
-    return colorSetInLAB.sort()
+def convert_color_set_to_LAB(input_color_set):
+    color_set_in_LAB = []
+    for each_color_scheme in input_color_set:
+        each_color_scheme_in_RBG = colors.hexToRGB(each_color_scheme)
+        each_color_scheme_in_LAB = colors.rgb2lab(each_color_scheme_in_RBG)
+        color_set_in_LAB.append(each_color_scheme_in_LAB)
+    return color_set_in_LAB.sort()
 
 
-def calculateMeanSimularityOfTwoColorSets(firstColorSetInLAB, secondColorSetInLAB):
-    arrayOfSimilarities = []
-    totalNumberOfColors = len(firstColorSetInLAB)
-    for eachColor in range(totalNumberOfColors):
-        firstColorToCompare = firstColorSetInLAB[eachColor]
-        secondColorToCompare = secondColorSetInLAB[eachColor]
-        similarityBetweenTwoColors = colors.deltaE(firstColorToCompare, secondColorToCompare)
-        arrayOfSimilarities.append(similarityBetweenTwoColors)
-    return mean(arrayOfSimilarities)
+def calculate_mean_simularity(color_set_in_LAB1, color_set_in_LAB2):
+    similarities = []
+    for color1, color2 in zip(color_set_in_LAB1, color_set_in_LAB2):
+        similarity_between_colors = colors.deltaE(color1, color2)
+        similarities.append(similarity_between_colors)
+    return mean(similarities)
 
-
-def printLevelOfPerceptibility(meanSimilarityBetweenBothColorSets):
-    if (meanSimilarityBetweenBothColorSets <= 1.0):
+def print_level_of_perceptibility(mean_similarity):
+    if mean_similarity <= 1.0:
         print("Delta E:    <= 1.0")
-        print("Perception: The difference in the color set of the paintings are not perceptible by human eyes")
-        return
-    if (meanSimilarityBetweenBothColorSets <= 2.0):
+        print(
+            "Perception: The difference in the color set of the paintings are not perceptible by human eyes"
+        )
+    elif mean_similarity <= 2.0:
         print("Delta E:    1 - 2")
-        print("Perception: The difference in the color set of the paintings are perceptible through close observation")
-        return
-    if (meanSimilarityBetweenBothColorSets <= 11.0):
+        print(
+            "Perception: The difference in the color set of the paintings are perceptible through close observation"
+        )
+    elif mean_similarity <= 11.0:
         print("Delta E:    2 - 10")
-        print("Perception: The difference in the color set of the paintings are perceptible at a glance")
-        return
-    if (meanSimilarityBetweenBothColorSets <= 49.0):
+        print(
+            "Perception: The difference in the color set of the paintings are perceptible at a glance"
+        )
+    elif mean_similarity <= 49.0:
         print("Delta E:    11 - 49")
-        print("Preception: The color set of the paintings are more similar than opposite")
-        return
+        print(
+            "Preception: The color set of the paintings are more similar than opposite"
+        )
     else:
         print("Delta E:    49 - 100")
         print("Perception: The color set of the paintings are exact opposites")
-        return
